@@ -1,0 +1,722 @@
+[
+  {
+    "maker": "Toyota",
+    "year": 2018,
+    "model": "Corolla",
+    "mileage": 50000,
+    "type": "Sedan",
+    "price": 15000,
+    "location": "Guatemala",
+    "carCode": "TOYCOR01"
+  },
+  {
+    "maker": "Honda",
+    "year": 2020,
+    "model": "Civic",
+    "mileage": 30000,
+    "type": "Sedan",
+    "price": 18000,
+    "location": "Antigua",
+    "carCode": "HONCIV02"
+  },
+  {
+    "maker": "Ford",
+    "year": 2017,
+    "model": "Escape",
+    "mileage": 60000,
+    "type": "SUV",
+    "price": 16000,
+    "location": "Escuintla",
+    "carCode": "FORESC03"
+  },
+  {
+    "maker": "Chevrolet",
+    "year": 2019,
+    "model": "Spark",
+    "mileage": 40000,
+    "type": "Hatchback",
+    "price": 10000,
+    "location": "Mixco",
+    "carCode": "CHESPA04"
+  },
+  {
+    "maker": "Nissan",
+    "year": 2016,
+    "model": "Sentra",
+    "mileage": 70000,
+    "type": "Compact Sedan",
+    "price": 12000,
+    "location": "Villa Nueva",
+    "carCode": "NISSEN05"
+  },
+  {
+    "maker": "Mazda",
+    "year": 2018,
+    "model": "CX-5",
+    "mileage": 50000,
+    "type": "SUV",
+    "price": 20000,
+    "location": "Quetzaltenango",
+    "carCode": "MAZCX506"
+  },
+  {
+    "maker": "Hyundai",
+    "year": 2020,
+    "model": "Tucson",
+    "mileage": 20000,
+    "type": "SUV",
+    "price": 22000,
+    "location": "Chimaltenango",
+    "carCode": "HYUTUC07"
+  },
+  {
+    "maker": "Kia",
+    "year": 2019,
+    "model": "Soul",
+    "mileage": 30000,
+    "type": "Hatchback",
+    "price": 14000,
+    "location": "Cobán",
+    "carCode": "KIASOU08"
+  },
+  {
+    "maker": "Volkswagen",
+    "year": 2017,
+    "model": "Jetta",
+    "mileage": 55000,
+    "type": "Sedan",
+    "price": 17000,
+    "location": "Huehuetenango",
+    "carCode": "VOLJET09"
+  },
+  {
+    "maker": "BMW",
+    "year": 2016,
+    "model": "X3",
+    "mileage": 65000,
+    "type": "SUV",
+    "price": 30000,
+    "location": "San Marcos",
+    "carCode": "BMWX3010"
+  },
+  {
+    "maker": "Audi",
+    "year": 2018,
+    "model": "A4",
+    "mileage": 45000,
+    "type": "Sedan",
+    "price": 35000,
+    "location": "Totonicapán",
+    "carCode": "AUDX4011"
+  },
+  {
+    "maker": "Mercedes-Benz",
+    "year": 2019,
+    "model": "GLA",
+    "mileage": 25000,
+    "type": "SUV",
+    "price": 40000,
+    "location": "Jalapa",
+    "carCode": "MERGLA12"
+  },
+  {
+    "maker": "Subaru",
+    "year": 2020,
+    "model": "Forester",
+    "mileage": 15000,
+    "type": "SUV",
+    "price": 27000,
+    "location": "Santa Lucía Cotzumalguapa",
+    "carCode": "SUBFOR13"
+  },
+  {
+    "maker": "Mitsubishi",
+    "year": 2017,
+    "model": "Outlander",
+    "mileage": 55000,
+    "type": "SUV",
+    "price": 19000,
+    "location": "Puerto Barrios",
+    "carCode": "MITOUT14"
+  },
+  {
+    "maker": "Suzuki",
+    "year": 2018,
+    "model": "Swift",
+    "mileage": 35000,
+    "type": "Hatchback",
+    "price": 13000,
+    "location": "Zacapa",
+    "carCode": "SUZSWI15"
+  },
+  {
+    "maker": "Jeep",
+    "year": 2019,
+    "model": "Cherokee",
+    "mileage": 25000,
+    "type": "SUV",
+    "price": 33000,
+    "location": "Chiquimula",
+    "carCode": "JEEPCH16"
+  },
+  {
+    "maker": "Volvo",
+    "year": 2020,
+    "model": "XC40",
+    "mileage": 10000,
+    "type": "SUV",
+    "price": 40000,
+    "location": "Sololá",
+    "carCode": "VOLXC417"
+  },
+  {
+    "maker": "Tesla",
+    "year": 2021,
+    "model": "Model 3",
+    "mileage": 5000,
+    "type": "Sedan",
+    "price": 45000,
+    "location": "Mazatenango",
+    "carCode": "TESMO318"
+  },
+  {
+    "maker": "Chevrolet",
+    "year": 2018,
+    "model": "Tahoe",
+    "mileage": 40000,
+    "type": "SUV",
+    "price": 35000,
+    "location": "Escuintla",
+    "carCode": "CHETAH19"
+  },
+  {
+    "maker": "Ford",
+    "year": 2017,
+    "model": "Fusion",
+    "mileage": 65000,
+    "type": "Sedan",
+    "price": 18000,
+    "location": "Retalhuleu",
+    "carCode": "FORFUS20"
+  },
+  {
+    "maker": "Honda",
+    "year": 2019,
+    "model": "CR-V",
+    "mileage": 30000,
+    "type": "SUV",
+    "price": 25000,
+    "location": "Guatemala",
+    "carCode": "HONCRV21"
+  },
+  {
+    "maker": "Toyota",
+    "year": 2020,
+    "model": "RAV4",
+    "mileage": 20000,
+    "type": "SUV",
+    "price": 28000,
+    "location": "Guatemala",
+    "carCode": "TOYRAV22"
+  },
+  {
+    "maker": "Nissan",
+    "year": 2017,
+    "model": "Altima",
+    "mileage": 50000,
+    "type": "Sedan",
+    "price": 16000,
+    "location": "Chiquimula",
+    "carCode": "NISALT23"
+  },
+  {
+    "maker": "Mazda",
+    "year": 2016,
+    "model": "Mazda3",
+    "mileage": 70000,
+    "type": "Compact Sedan",
+    "price": 12000,
+    "location": "Antigua",
+    "carCode": "MAZMA324"
+  },
+  {
+    "maker": "Hyundai",
+    "year": 2018,
+    "model": "Elantra",
+    "mileage": 45000,
+    "type": "Sedan",
+    "price": 15000,
+    "location": "Escuintla",
+    "carCode": "HYUELA25"
+  },
+  {
+    "maker": "Kia",
+    "year": 2021,
+    "model": "Seltos",
+    "mileage": 10000,
+    "type": "SUV",
+    "price": 23000,
+    "location": "Villa Nueva",
+    "carCode": "KIASEL26"
+  },
+  {
+    "maker": "Volkswagen",
+    "year": 2017,
+    "model": "Golf",
+    "mileage": 60000,
+    "type": "Hatchback",
+    "price": 14000,
+    "location": "Guatemala",
+    "carCode": "VOLGOL27"
+  },
+  {
+    "maker": "BMW",
+    "year": 2019,
+    "model": "320i",
+    "mileage": 30000,
+    "type": "Sedan",
+    "price": 35000,
+    "location": "Quetzaltenango",
+    "carCode": "BMW32028"
+  },
+  {
+    "maker": "Audi",
+    "year": 2018,
+    "model": "Q5",
+    "mileage": 40000,
+    "type": "SUV",
+    "price": 40000,
+    "location": "Guatemala",
+    "carCode": "AUDQ529"
+  },
+  {
+    "maker": "Mercedes-Benz",
+    "year": 2020,
+    "model": "C-Class",
+    "mileage": 15000,
+    "type": "Sedan",
+    "price": 45000,
+    "location": "Cobán",
+    "carCode": "MERC3030"
+  },
+  {
+    "maker": "Subaru",
+    "year": 2017,
+    "model": "Impreza",
+    "mileage": 50000,
+    "type": "Compact Sedan",
+    "price": 18000,
+    "location": "Mixco",
+    "carCode": "SUBIMP31"
+  },
+  {
+    "maker": "Mitsubishi",
+    "year": 2019,
+    "model": "Eclipse Cross",
+    "mileage": 20000,
+    "type": "SUV",
+    "price": 21000,
+    "location": "Villa Canales",
+    "carCode": "MITECL32"
+  },
+  {
+    "maker": "Suzuki",
+    "year": 2016,
+    "model": "Vitara",
+    "mileage": 70000,
+    "type": "SUV",
+    "price": 15000,
+    "location": "Huehuetenango",
+    "carCode": "SUZVIT33"
+  },
+  {
+    "maker": "Jeep",
+    "year": 2018,
+    "model": "Renegade",
+    "mileage": 35000,
+    "type": "SUV",
+    "price": 22000,
+    "location": "San Marcos",
+    "carCode": "JEEPREN34"
+  },
+  {
+    "maker": "Volvo",
+    "year": 2020,
+    "model": "XC60",
+    "mileage": 12000,
+    "type": "SUV",
+    "price": 45000,
+    "location": "Totonicapán",
+    "carCode": "VOLXC635"
+  },
+  {
+    "maker": "Tesla",
+    "year": 2019,
+    "model": "Model X",
+    "mileage": 20000,
+    "type": "SUV",
+    "price": 80000,
+    "location": "Jalapa",
+    "carCode": "TESMO336"
+  },
+  {
+    "maker": "Chevrolet",
+    "year": 2021,
+    "model": "Equinox",
+    "mileage": 5000,
+    "type": "SUV",
+    "price": 35000,
+    "location": "Santa Lucía Cotzumalguapa",
+    "carCode": "CHEEQU37"
+  },
+  {
+    "maker": "Ford",
+    "year": 2018,
+    "model": "Explorer",
+    "mileage": 40000,
+    "type": "SUV",
+    "price": 37000,
+    "location": "Puerto Barrios",
+    "carCode": "FOREXP38"
+  },
+  {
+    "maker": "Honda",
+    "year": 2020,
+    "model": "Pilot",
+    "mileage": 15000,
+    "type": "SUV",
+    "price": 42000,
+    "location": "Zacapa",
+    "carCode": "HONPIL39"
+  },
+  {
+    "maker": "Toyota",
+    "year": 2017,
+    "model": "Camry",
+    "mileage": 55000,
+    "type": "Sedan",
+    "price": 20000,
+    "location": "Chiquimula",
+    "carCode": "TOYCAM40"
+  },
+  {
+    "maker": "Nissan",
+    "year": 2019,
+    "model": "Rogue",
+    "mileage": 25000,
+    "type": "SUV",
+    "price": 26000,
+    "location": "Sololá",
+    "carCode": "NISROG41"
+  },
+  {
+    "maker": "Mazda",
+    "year": 2018,
+    "model": "CX-3",
+    "mileage": 30000,
+    "type": "SUV",
+    "price": 24000,
+    "location": "Mazatenango",
+    "carCode": "MAZCX342"
+  },
+  {
+    "maker": "Hyundai",
+    "year": 2017,
+    "model": "Sonata",
+    "mileage": 60000,
+    "type": "Sedan",
+    "price": 17000,
+    "location": "Escuintla",
+    "carCode": "HYUSON43"
+  },
+  {
+    "maker": "Kia",
+    "year": 2020,
+    "model": "Sorento",
+    "mileage": 20000,
+    "type": "SUV",
+    "price": 31000,
+    "location": "Retalhuleu",
+    "carCode": "KIASOR44"
+  },
+  {
+    "maker": "Volkswagen",
+    "year": 2019,
+    "model": "Tiguan",
+    "mileage": 25000,
+    "type": "SUV",
+    "price": 33000,
+    "location": "Guatemala",
+    "carCode": "VOLTI445"
+  },
+  {
+    "maker": "BMW",
+    "year": 2021,
+    "model": "X5",
+    "mileage": 5000,
+    "type": "SUV",
+    "price": 70000,
+    "location": "Guatemala",
+    "carCode": "BMWX546"
+  },
+  {
+    "maker": "Audi",
+    "year": 2017,
+    "model": "A3",
+    "mileage": 45000,
+    "type": "Sedan",
+    "price": 29000,
+    "location": "Antigua",
+    "carCode": "AUDA347"
+  },
+  {
+    "maker": "Mercedes-Benz",
+    "year": 2018,
+    "model": "E-Class",
+    "mileage": 30000,
+    "type": "Sedan",
+    "price": 60000,
+    "location": "Guatemala",
+    "carCode": "MERE3048"
+  },
+  {
+    "maker": "Subaru",
+    "year": 2019,
+    "model": "Outback",
+    "mileage": 20000,
+    "type": "SUV",
+    "price": 32000,
+    "location": "Quetzaltenango",
+    "carCode": "SUBOUT49"
+  },
+  {
+    "maker": "Mitsubishi",
+    "year": 2020,
+    "model": "Pajero",
+    "mileage": 15000,
+    "type": "SUV",
+    "price": 40000,
+    "location": "Mixco",
+    "carCode": "MITPAJ50"
+  },
+  {
+    "maker": "Suzuki",
+    "year": 2021,
+    "model": "Baleno",
+    "mileage": 8000,
+    "type": "Hatchback",
+    "price": 18000,
+    "location": "Villa Nueva",
+    "carCode": "SUZBAL51"
+  },
+  {
+    "maker": "Jeep",
+    "year": 2017,
+    "model": "Compass",
+    "mileage": 50000,
+    "type": "SUV",
+    "price": 25000,
+    "location": "San Marcos",
+    "carCode": "JEECOM52"
+  },
+  {
+    "maker": "Volvo",
+    "year": 2016,
+    "model": "S60",
+    "mileage": 60000,
+    "type": "Sedan",
+    "price": 20000,
+    "location": "Totonicapán",
+    "carCode": "VOLS6053"
+  },
+  {
+    "maker": "Tesla",
+    "year": 2018,
+    "model": "Model S",
+    "mileage": 30000,
+    "type": "Sedan",
+    "price": 80000,
+    "location": "Jalapa",
+    "carCode": "TESMOS54"
+  },
+  {
+    "maker": "Chevrolet",
+    "year": 2019,
+    "model": "Traverse",
+    "mileage": 35000,
+    "type": "SUV",
+    "price": 33000,
+    "location": "Santa Lucía Cotzumalguapa",
+    "carCode": "CHETRA55"
+  },
+  {
+    "maker": "Ford",
+    "year": 2017,
+    "model": "Edge",
+    "mileage": 45000,
+    "type": "SUV",
+    "price": 28000,
+    "location": "Puerto Barrios",
+    "carCode": "FOREDG56"
+  },
+  {
+    "maker": "Honda",
+    "year": 2018,
+    "model": "Accord",
+    "mileage": 35000,
+    "type": "Sedan",
+    "price": 24000,
+    "location": "Zacapa",
+    "carCode": "HONACC57"
+  },
+  {
+    "maker": "Toyota",
+    "year": 2021,
+    "model": "Highlander",
+    "mileage": 8000,
+    "type": "SUV",
+    "price": 42000,
+    "location": "Chiquimula",
+    "carCode": "TOYHIG58"
+  },
+  {
+    "maker": "Nissan",
+    "year": 2016,
+    "model": "Maxima",
+    "mileage": 70000,
+    "type": "Sedan",
+    "price": 17000,
+    "location": "Sololá",
+    "carCode": "NISMAX59"
+  },
+  {
+    "maker": "Mazda",
+    "year": 2020,
+    "model": "Mazda6",
+    "mileage": 15000,
+    "type": "Sedan",
+    "price": 27000,
+    "location": "Mazatenango",
+    "carCode": "MAZMA660"
+  },
+  {
+    "maker": "Hyundai",
+    "year": 2019,
+    "model": "Kona",
+    "mileage": 20000,
+    "type": "SUV",
+    "price": 25000,
+    "location": "Escuintla",
+    "carCode": "HYUKON61"
+  },
+  {
+    "maker": "Kia",
+    "year": 2018,
+    "model": "Sportage",
+    "mileage": 30000,
+    "type": "SUV",
+    "price": 23000,
+    "location": "Retalhuleu",
+    "carCode": "KIASPO62"
+  },
+  {
+    "maker": "Volkswagen",
+    "year": 2021,
+    "model": "Atlas",
+    "mileage": 10000,
+    "type": "SUV",
+    "price": 45000,
+    "location": "Guatemala",
+    "carCode": "VOLATX63"
+  },
+  {
+    "maker": "BMW",
+    "year": 2016,
+    "model": "X1",
+    "mileage": 60000,
+    "type": "SUV",
+    "price": 28000,
+    "location": "Guatemala",
+    "carCode": "BMWX164"
+  },
+  {
+    "maker": "Audi",
+    "year": 2020,
+    "model": "Q7",
+    "mileage": 15000,
+    "type": "SUV",
+    "price": 70000,
+    "location": "Antigua",
+    "carCode": "AUDQ765"
+  },
+  {
+    "maker": "Mercedes-Benz",
+    "year": 2017,
+    "model": "GLE",
+    "mileage": 45000,
+    "type": "SUV",
+    "price": 55000,
+    "location": "Guatemala",
+    "carCode": "MERGLX66"
+  },
+  {
+    "maker": "Subaru",
+    "year": 2016,
+    "model": "Legacy",
+    "mileage": 70000,
+    "type": "Sedan",
+    "price": 15000,
+    "location": "Quetzaltenango",
+    "carCode": "SUBLEG67"
+  },
+  {
+    "maker": "Mitsubishi",
+    "year": 2018,
+    "model": "ASX",
+    "mileage": 40000,
+    "type": "SUV",
+    "price": 21000,
+    "location": "Mixco",
+    "carCode": "MITASX68"
+  },
+  {
+    "maker": "Suzuki",
+    "year": 2019,
+    "model": "Jimny",
+    "mileage": 30000,
+    "type": "SUV",
+    "price": 20000,
+    "location": "Villa Nueva",
+    "carCode": "SUZJIM69"
+  },
+  {
+    "maker": "Jeep",
+    "year": 2021,
+    "model": "Wrangler",
+    "mileage": 5000,
+    "type": "SUV",
+    "price": 45000,
+    "location": "San Marcos",
+    "carCode": "JEEWRA70"
+  },
+  {
+    "maker": "Volvo",
+    "year": 2017,
+    "model": "V40",
+    "mileage": 50000,
+    "type": "Hatchback",
+    "price": 20000,
+    "location": "Totonicapán",
+    "carCode": "VOLV4071"
+  },
+  {
+    "maker": "Tesla",
+    "year": 2020,
+    "model": "Model Y",
+    "mileage": 10000,
+    "type": "SUV",
+    "price": 70000,
+    "location": "Jalapa",
+    "carCode": "TESMOY72"
+  }
+]

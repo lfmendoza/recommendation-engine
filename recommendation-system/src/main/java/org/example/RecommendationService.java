@@ -1,11 +1,11 @@
 package org.example;
+
 import org.neo4j.driver.AuthTokens;
 import org.neo4j.driver.Driver;
 import org.neo4j.driver.GraphDatabase;
 import org.neo4j.driver.Session;
 import org.neo4j.driver.Result;
 import org.neo4j.driver.Record;
-import org.neo4j.driver.Value;
 
 import java.util.List;
 
@@ -14,14 +14,17 @@ public class RecommendationService {
     private Driver driver;
     private boolean hasData = false;
 
+    // Conexión a Neo4j
     public void connectToNeo4j(String uri, String user, String password) {
         driver = GraphDatabase.driver(uri, AuthTokens.basic(user, password));
     }
 
+    // Método para obtener recomendaciones por tipo de píxel
     public void getRecommendationsByPixel(String pixel) {
         try (Session session = driver.session()) {
             List<String> paramTokenList = List.of(pixel);
 
+            // Consulta Cypher para obtener las recomendaciones
             String query = "WITH $paramTokenList AS param_token_list\n" +
                     "// step 1: total count\n" +
                     "MATCH (:Pixel)-[r:HAS_TAG]->(:AnnotatedToken)\n" +
@@ -46,8 +49,10 @@ public class RecommendationService {
                     "ORDER BY score DESC\n" +
                     "LIMIT 20";
 
+            // Ejecutar la consulta
             Result result = session.run(query, org.neo4j.driver.Values.parameters("paramTokenList", paramTokenList));
 
+            // Verificar si hay datos en el resultado
             hasData = result.hasNext();
             System.out.println("Recommendations for pixel: " + pixel);
             while (result.hasNext()) {
@@ -60,8 +65,10 @@ public class RecommendationService {
         }
     }
 
+    // Método para filtrar datos basados en un texto de filtro
     public void filterData(String filterText) {
         try (Session session = driver.session()) {
+            // Consulta Cypher para filtrar datos de carros
             String query = "MATCH (c:Car) " +
                     "WHERE c.maker CONTAINS $filterText OR c.model CONTAINS $filterText OR c.year CONTAINS $filterText " +
                     "OR c.mileage CONTAINS $filterText OR c.type CONTAINS $filterText OR c.location CONTAINS $filterText " +
@@ -69,8 +76,10 @@ public class RecommendationService {
                     "ORDER BY c.price ASC " +
                     "LIMIT 20";
 
+            // Ejecutar la consulta
             Result result = session.run(query, org.neo4j.driver.Values.parameters("filterText", filterText));
 
+            // Verificar si hay datos en el resultado
             hasData = result.hasNext();
             if (!hasData) {
                 System.out.println("No information matches the search parameters.");
@@ -92,11 +101,14 @@ public class RecommendationService {
         }
     }
 
+    // Método para agregar un nodo a la base de datos
     public void addNode(String carCode, String maker, int year, String model, int mileage, String type, double price, String location, String tokenName, String pixelName, String device, String timestamp) {
         try (Session session = driver.session()) {
+            // Crear un nodo Car
             String carQuery = "CREATE (c:Car {carCode: $carCode, maker: $maker, year: $year, model: $model, mileage: $mileage, type: $type, price: $price, location: $location})";
             session.run(carQuery, org.neo4j.driver.Values.parameters("carCode", carCode, "maker", maker, "year", year, "model", model, "mileage", mileage, "type", type, "price", price, "location", location));
 
+            // Crear un nodo AnnotatedToken y relaciones con Pixel y Car
             String tokenQuery = "MATCH (c:Car {carCode: $carCode}), (p:Pixel {name: $pixelName}) " +
                     "MERGE (t:AnnotatedToken {name: $tokenName}) " +
                     "MERGE (p)-[r:HAS_TAG {device: $device, timestamp: $timestamp}]->(t) " +
@@ -105,6 +117,7 @@ public class RecommendationService {
         }
     }
 
+    // Método para eliminar un nodo de la base de datos
     public void deleteNode(String carCode) {
         try (Session session = driver.session()) {
             String query = "MATCH (c:Car {carCode: $carCode}) DETACH DELETE c";
@@ -112,15 +125,18 @@ public class RecommendationService {
         }
     }
 
+    // Método para obtener recomendaciones de redes sociales
     public void getSocialMediaRecommendation(String platform) {
         System.out.println("Social Media recommendation for: " + platform);
         getRecommendationsByPixel(platform);
     }
 
+    // Método para verificar si hay datos disponibles
     public boolean hasData() {
         return hasData;
     }
 
+    // Método para cerrar la conexión a Neo4j
     public void closeConnection() {
         if (driver != null) {
             driver.close();

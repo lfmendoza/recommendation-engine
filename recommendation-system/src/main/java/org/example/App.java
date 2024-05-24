@@ -1,24 +1,23 @@
 package org.example;
 
-
 import java.util.Scanner;
 
 public class App {
 
+    // Instancia del servicio de recomendaciones
     private static RecommendationService recommendationService = new RecommendationService();
     private static String lastPixel = "";
 
     public static void main(String[] args) {
-        // Connect to Neo4j
+        // Conexión a Neo4j
         recommendationService.connectToNeo4j("neo4j+s://452a1661.databases.neo4j.io:7687", "neo4j", "pgurqecn14jK4u4ro_h-0T0u0oTy7stMZWezJPMqWx8");
 
-        // Display options menu
         displayMenu();
 
-        // Close connection
         recommendationService.closeConnection();
     }
 
+    // Menú de opciones
     private static void displayMenu() {
         Scanner scanner = new Scanner(System.in);
 
@@ -29,6 +28,7 @@ public class App {
             System.out.println("3. Eliminar nodos");
             System.out.println("0. Salir");
 
+            // Mostrar opciones adicionales si hay datos
             if (recommendationService.hasData()) {
                 System.out.println("4. Filter data");
                 System.out.println("5. Clear filter");
@@ -37,7 +37,7 @@ public class App {
 
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -73,6 +73,7 @@ public class App {
         }
     }
 
+    // Método para buscar recomendaciones por tipo de pixel
     private static void buscar() {
         Scanner scanner = new Scanner(System.in);
 
@@ -83,8 +84,7 @@ public class App {
 
         System.out.print("Choose an option: ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
-
+        scanner.nextLine();
         switch (choice) {
             case 1:
                 lastPixel = "MetaPixel";
@@ -103,6 +103,7 @@ public class App {
         recommendationService.getRecommendationsByPixel(lastPixel);
     }
 
+    // Método para agregar nodos a la base de datos
     private static void agregarNodos() {
         Scanner scanner = new Scanner(System.in);
 
@@ -114,28 +115,28 @@ public class App {
 
         System.out.print("Enter year: ");
         int year = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         System.out.print("Enter model: ");
         String model = scanner.nextLine();
 
         System.out.print("Enter mileage: ");
         int mileage = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         System.out.print("Enter type: ");
         String type = scanner.nextLine();
 
         System.out.print("Enter price: ");
         double price = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         System.out.print("Enter location: ");
         String location = scanner.nextLine();
 
         System.out.print("Enter the number of annotated tokens: ");
         int tokenCount = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         for (int i = 0; i < tokenCount; i++) {
             System.out.println("Annotated Token " + (i + 1) + ":");
@@ -157,6 +158,7 @@ public class App {
         System.out.println("Node added successfully.");
     }
 
+    // Método para eliminar nodos de la base de datos
     private static void eliminarNodos() {
         Scanner scanner = new Scanner(System.in);
 
@@ -168,6 +170,7 @@ public class App {
         System.out.println("Node deleted successfully.");
     }
 
+    // Método para filtrar datos
     private static void filterData() {
         Scanner scanner = new Scanner(System.in);
 
@@ -177,11 +180,13 @@ public class App {
         recommendationService.filterData(filterText);
     }
 
+    // Método para limpiar el filtro y mostrar recomendaciones por el último pixel buscado
     private static void clearFilter() {
         System.out.println("Clearing filter...");
         recommendationService.getRecommendationsByPixel(lastPixel);
     }
 
+    // Método para obtener recomendaciones de redes sociales
     private static void socialMediaRecommendation() {
         Scanner scanner = new Scanner(System.in);
 
@@ -193,7 +198,7 @@ public class App {
 
         System.out.print("Choose an option: ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (choice) {
             case 1:
